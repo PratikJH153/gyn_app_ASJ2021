@@ -2,7 +2,6 @@ package com.example.gyn_app_asj_2021
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -59,7 +58,6 @@ class MainActivity : AppCompatActivity() {
             )
 
             recycler_view.adapter!!.notifyDataSetChanged()
-
             Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
         }
 
