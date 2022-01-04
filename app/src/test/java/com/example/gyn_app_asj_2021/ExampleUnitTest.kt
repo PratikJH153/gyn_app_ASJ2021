@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.gyn_app_asj_2021
 
 import org.junit.Test
 
