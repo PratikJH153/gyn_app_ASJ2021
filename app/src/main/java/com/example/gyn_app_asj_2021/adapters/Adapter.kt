@@ -3,10 +3,11 @@ package com.example.gyn_app_asj_2021.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gyn_app_asj_2021.R
-import com.example.gyn_app_asj_2021.Task
+import com.example.gyn_app_asj_2021.persistence.Task
 import de.hdodenhof.circleimageview.CircleImageView
 
 class Adapter(private val dataList:List<Task>) : RecyclerView.Adapter<Adapter.ViewHolder>() {
@@ -17,6 +18,7 @@ class Adapter(private val dataList:List<Task>) : RecyclerView.Adapter<Adapter.Vi
         val icon:CircleImageView = itemView.findViewById(R.id.icon)
         val textView1: TextView = itemView.findViewById(R.id.task_name)
         val textView2: TextView = itemView.findViewById(R.id.task_desc)
+        val check_box: CheckBox = itemView.findViewById(R.id.check_box)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -33,6 +35,7 @@ class Adapter(private val dataList:List<Task>) : RecyclerView.Adapter<Adapter.Vi
         holder.textView1.text = currentItem.task_name
         holder.textView2.text = currentItem.task_desc
         holder.icon.setImageResource(currentItem.icon)
+        holder.check_box.isChecked = currentItem.isChecked
     }
 
     override fun getItemCount() = dataList.size

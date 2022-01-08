@@ -10,7 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.gyn_app_asj_2021.R
-import com.example.gyn_app_asj_2021.Task
+import com.example.gyn_app_asj_2021.persistence.Task
 import com.example.gyn_app_asj_2021.data.dataList
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.activity_main.*

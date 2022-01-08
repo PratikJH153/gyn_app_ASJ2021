@@ -1,7 +1,7 @@
 package com.example.gyn_app_asj_2021.data
 
 import com.example.gyn_app_asj_2021.R
-import com.example.gyn_app_asj_2021.Task
+import com.example.gyn_app_asj_2021.persistence.Task
 
 var dataList: MutableList<Task> = mutableListOf(
     Task(
