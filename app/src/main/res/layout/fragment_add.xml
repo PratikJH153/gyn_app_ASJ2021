@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.addFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/icon_add_fragment"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/coffeebreak"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tap_to_change_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/icon_add_fragment"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tap_icon_to_change"/>
+
+    <EditText
+        android:hint="@string/task_name"
+        android:id="@+id/task_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tap_to_change_text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp" />
+
+    <EditText
+        android:hint="@string/desc"
+        android:id="@+id/desc_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_name_edit_text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp" />
+
+    <Button
+        android:text="Add"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/ok_button_add"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/desc_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</RelativeLayout>
